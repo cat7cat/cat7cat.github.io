@@ -5,8 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歡迎來到克利斯宇宙</title>
+    <style>
+
+        .menu { 
+            width: 800px;
+            height: 30px;
+        }
+
+        .menu ul {
+            /* 取消ul樣式符號 */
+            list-style-type:none;
+            /* 重設ul邊界與留白為零 */
+            margin:0;
+            padding:0;
+            /* 內有浮動元件時，需設overflow才會自動調整大小 */
+            overflow:auto;
+        }
+        .menu ul li {
+            /* 利用float讓第一層li水平排列 */
+            float:left;
+        }
+        
+        .menu ul li ul {
+            /* 讓第二層ul跳脫文件流以利定位 */
+            position:absolute;
+            /* 固定寬度 */
+            width:100px;
+            /* 避免出現捲軸 */
+            overflow:visible;
+            /* 讓ul與母階層li相同位置 */
+            clear:left;
+            margin-top: 30px;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+
+        
+
+        .mid {
+                 display: border-box;
+            }
+        .midmenu a{
+            /* 取消ul樣式符號 */
+            list-style-type:none;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
 </head>
 <body>
     <H1>克利斯宇宙</H1>
+    <div class="top">
+        <div class="logo">
+
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Profolio</a>
+                    <ul>
+                        <li><a href="#">Homework</a>
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">Design</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="project.html">Project</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="studynote.html">StudyNote</a></li>
+                <li><a href="content.html">Content</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="mid">
+    <a href="mid_html" class="midmenu">HTML</a>
+    <a href="mid_php.html" class="midmenu">PHP</a>
+    <a href="mid.design.html" class="midmenu">Design</a>
+    </div>
+
+    <div class="foot">
+
+    </div>
+
+
+
+
+
+
+
 </body>
 </html>
