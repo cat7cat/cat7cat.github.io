@@ -1,0 +1,473 @@
+/*針對整體做動畫*/
+* {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/*
+  但是全體做動畫有個缺點，當在LOGO裡面做圖的時候，文字隱藏的時候，
+  網站剛讀取會有動畫效果!超像bug的所以如果有在LOGO設圖片，要針對LOGO的地方動畫速度歸 0
+*/
+/*針對 .navbar 作一些我想要的修正*/
+.navbar-scroll.navbar {
+    padding: 0px;
+    border-radius: 0px;
+    margin: 0;
+
+}
+
+/*也是針對想要的畫面做修正*/
+.navbar-scroll.navbar-fixed-top {
+    padding: 0px 0;
+
+
+}
+
+.navbar-brand {
+    font-weight: bolder;
+
+    
+}
+
+.top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;      
+    z-index: 99;
+
+}
+
+
+li {
+    margin: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+li:hover {
+    background: rgb(248, 217, 63);
+    margin: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.bhover {
+    padding: 10px;
+    font-weight: bolder;
+
+}
+.bhover:hover {
+    background: rgb(248, 217, 63);
+    color: #000;
+    border-radius: 5px;
+
+}
+
+
+.title-name {
+
+    background:rgba(0, 0, 0, 0.3) ;
+    color:#fff;
+    /* width:150px;height:30px;padding:15px; */
+    /* position:relative; */
+    /* margin-top: 60px; */
+    width: 100%;
+    height: 500px;
+    top: 100px;
+    text-align:center; 
+    /* -moz-transform:rotate(-5deg);  
+    -webkit-transform:rotate(-5deg);  
+    -o-transform:rotate(-5deg); 
+    -ms-transform:rotate(-5deg); 
+    transform:rotate(-5deg);  
+    z-index: 99; */
+}
+
+
+.title-shape{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 600px 0 0;
+    color:rgba(67, 67, 67, 0.5) ;
+    border-color: #99a4b0 transparent transparent transparent;
+    }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;      
+  z-index: 99;
+  }
+
+.nav-link {
+    color: #fff;
+
+}
+
+.nav-link:hover {
+    background: rgb(248, 217, 63);
+    color: #000;
+    border-radius: 5px;
+}
+
+
+
+ 
+
+
+/* .work {
+    text-align: right;
+    align-items: right;
+    height: 50px;
+    background-color: #fff;
+} */
+
+
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 1em;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-brand {
+    padding: 0 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 1em;
+    }
+
+    .navbar .navbar-brand {
+        padding: 0 1em;
+    }
+}
+
+                .acss {
+                    text-align: center;
+                    align-items: center;
+                    padding-top: 50px;
+                    height: 100px;
+                    margin: 0 auto;
+                }
+        
+                .rowcss {
+                    margin: 50px; 
+                     height: 200px;
+                     margin: 0 auto;
+                }
+        
+                .profoliocss {
+                    /* border: 5px solid #ccc; */
+                    /* border-radius: 5px; */
+                    text-align: center;
+                    width: 420px;
+                    height: 350px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-decoration:none;
+                    margin: 50px;
+                    /* padding-top: 85px; */
+
+                    /* height: 300px; */
+        
+        
+                }
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+    padding-bottom: 130px;
+  }
+  
+  .contact .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+  }
+  
+  .contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+  }
+  
+  .contact .info .email p {
+    padding-top: 5px;
+  }
+  
+  .contact .info .social-links {
+    padding-left: 60px;
+  }
+  
+  .contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+  }
+  
+  .contact .info .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: #149ddd;
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact .php-email-form label {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 15px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #37b3ed;
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/*--------------------------------------------------------------
+# skills
+--------------------------------------------------------------*/
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+  }
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 5px;
+    z-index: 996;
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #2eafec;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  

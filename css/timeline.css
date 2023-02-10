@@ -1,0 +1,66 @@
+html,
+body {
+    background-color: #dad7cd;
+    color: #344e41;
+}
+.box {
+    height: 300px;
+    background-color: #a3b18a;
+    /* // border: 1px solid #588157; */
+    border-radius: 5px;
+    box-shadow:0px 0px 5px #344e41;
+}
+.boxA{
+    background: url(https://images.unsplash.com/photo-1453785675141-67637e2d4b5c?dpr=2&auto=format&fit=crop&w=1500&h=918&q=80&cs=tinysrgb&crop=);
+}
+.boxB{
+    background: url(https://images.unsplash.com/photo-1490921045028-16ab0b47b757?dpr=2&auto=format&fit=crop&w=1500&h=2000&q=80&cs=tinysrgb&crop=);
+}
+.boxC{
+    background: url(https://images.unsplash.com/photo-1493585552824-131927c85da2?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+}
+.bg-cover{
+    background-size: cover;
+    /* //背景適應高寬 */
+    background-position: center center;
+    /* //位置置中 */
+}
+.timeLine {
+    position: relative;
+    &::after {
+        content: ''; /* 偽元素的起手式，一定要有才會呈現*/
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%; /* //會發現有點偏右，因為有3px的寬度*/
+        width: 3px;
+        transform: translateX(-50%); /* //把3px的寬度往左拉回一半中間*/
+        background-color: #344e41;
+    }
+}
+.timeLine-pointer {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%; /* //畫出圓形*/
+        border: 3px solid #344e41;
+        transform: translateX(-50%);
+        background-color: #dad7cd; /* //改變背景色*/
+        z-index: 1; /* //把位置移到中間線上方*/
+    }
+}
+
+@media (max-width: 576px) {
+    .timeLine::after {
+        display: none;
+    }
+    .timeLine-pointer::after {
+        display: none;
+    }
+}
